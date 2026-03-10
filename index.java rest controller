@@ -1,0 +1,14 @@
+@RestController
+@RequestMapping("/api/bus")
+public class BusController {
+
+    @GetMapping("/location")
+    public BusLocation getLocation(){
+
+        BusLocation bus = new BusLocation();
+        bus.setLatitude(10.7905);
+        bus.setLongitude(78.7047);
+
+        return bus;
+    }
+}
